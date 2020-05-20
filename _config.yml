@@ -3,11 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://fongandrew.github.io
-baseurl:          '/hydeout'
+title:            Taekyung Park
+description:      Hello!
+url:              https://kibi0620.github.io
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -15,11 +13,14 @@ baseurl:          '/hydeout'
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           Taekyung Park
+  url:            https://kibi0620.github.io
+  email:          kibi0620@gmail.com, ptk620@gmail.com
+  github:         kibi0620.github.io
+  linkedin:       https://www.linkedin.com/in/tae-kyung-park/
 
 paginate:         5
-# paginate_path:    '/page:num'
+paginate_path:    '/blog/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
 plugins:
@@ -27,8 +28,10 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
 
+repo:             https://github.com/kibi0620/kibi0620.github.io
+google_analytics: UA-160028891-1
 # Sidebar link settings
-sidebar_home_link:  true
+# sidebar_home_link:  true
 # sidebar_blog_link:  '/blog'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path

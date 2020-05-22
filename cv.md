@@ -20,6 +20,10 @@ sidebar_sort_order: 1
 * Ranked high and invited to the Google I/O in 2020, which is provided to global top 150 on the scoreboard of the contest.
     * Due to the COVID-19, the physical conference is cancelled and invitation is transferred to the 2021 I/O conference.
 
+<br>
+#### 1st among Games, Short Movies in SNU ISC Exhibition (2016)
+* Winner among Games by serious game "Treenity"
+* Winner among Short Movies using blue screen
 
 ***
 
@@ -99,4 +103,13 @@ sidebar_sort_order: 1
 * Helped students by teaching how to use machines and materials in lab
 * Managed the status of machines and materials
 
+#### Co-founder of Piano Group "Serendipity" (2012-present)
+* Performed piano duet songs in performances
+* Planned piano performances (compositions, marketing, albums etc) 
+
+<br>
+
+
 ***  
+
+

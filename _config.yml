@@ -36,3 +36,9 @@ google_analytics: UA-160028891-1
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+collections:
+  photo_gallery:
+    output: true
+    sort_by: weight
+  

@@ -1,16 +1,101 @@
-
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
--->
 <style>
     .gallery {
-        overflow: auto; 
+        /*overflow: auto; */
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 270px;
+    }
+
+    .column item {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 270px;
+    }
+    .column img {
+        cursor: pointer;
+        width: 100%;
+        height: 230px; 
+        object-fit: cover;
+        /* add shadows to differentiate the image */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .column img:hover {
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+        opacity: 10;
     }
 </style>
 
 <p class="gallery">
-    <h1> {{ page.title }}</h1>
-    <li>
-        <img src="{{ site.baseurl }}/assets/images/IMG_sample.jpeg" alt="Photo">
-    </li>
+    <!-- <h2> {{ page.title }}</h1> -->
+    <div class="Projects">
+        
+
+        <h2>Projects</h2>
+        <!-- reversed ver: latest is the biggest -->
+        {% assign sorted_gallery = site.photo_gallery | sort: 'weight' | reverse %}
+            <div class="grid">
+                {% for photo in sorted_gallery %}
+                    {% assign indexmod2 = forloop.index | modulo: 2 %}
+                    {{ indexmod3 }}
+                    {% if indexmod2 == 1 %} 
+                    <div class="row">    
+                    {% endif %}    
+                    <div class="column">
+                        <div class="item">
+                            <img src="{{ photo.image_path }}" alt="{{ photo.title }}"/>
+                            <h5>{{ photo.title }}</h5>
+                        </div>
+                    </div>
+                    {% if indexmod2 == 0 %} <!--<div style="clear: both;">/div>-->
+                    </div>    
+                    {% endif %}    
+                {% endfor %}    
+            </div>
+
+        <!--
+        <figure> 
+            <div style="display: block">
+            {% for photo in sorted_gallery %}
+                <div class="image" style="flex:{{ photo.aspect }}">
+                    <img src="{{ photo.image_path}}" alt="{{ photo.title }}" />
+                    <h3>{{ photo.title }} </h3>
+                    <p>{{ photo.description }}</p>
+                </div>
+            {% endfor %}
+            </div>
+        </figure>
+        <h1>Ended :( </h1> -->
+
+        <!--
+        {% assign group = include.source %}
+        site.{{ group }} 
+        {% for photo in site.group %}      site._photo_gallery 
+             {{ photo }}
+            <div class="photo">
+                <div class="image">
+                    {{photo.image_path}}
+                    <img src="../{{ photo.image_path }}" alt="{{ photo.title }}"/>
+                    {{ photo.image_path }}
+                </div>      
+                <h2>{{ photo.title }}</h2>
+                <p>{{ photo.description }}</p>
+            </div>
+        {% endfor %} -->
+        
+    </div>
 </p>
 

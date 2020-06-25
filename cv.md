@@ -36,7 +36,7 @@ sidebar_sort_order: 1
 
 <br>
 #### [AccuPS, Purdue University](https://www.accups.com/) (Sep 2016-Dec 2016)
-**Attended Capstone Project as a Software Engineer**
+**Attended Capstone Project**
 * **Advisor: [Professor Byunghoo Jung](https://web.ics.purdue.edu/~jungb/)**
 * Designed and developed educational application for the Unity3D VR device demo called ”Chemistry”
 * Connected data set in web with Unity VR application and processed 2D and 3D data to deal with size problem(obj importing issues)

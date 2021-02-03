@@ -9,7 +9,7 @@ layout: index
 I am a **software engineer** and **researcher**, currently working on SAP Labs Korea as an Software Engineer Intern. I love solving problems and puzzles in real matters :) 
 
 
-My research interests focus on **human-computer interaction**, especially for data-driven systems and interactions with customization. 
+My research interests focus on **Human-Computer Interaction**, especially for data-driven systems and interactions with customization. 
 My goal is to build tools that can help people by developing meaningful interactions and systems by user action data. 
 Currently I am working on developing better tool for developers in SAP Labs Korea.
 
